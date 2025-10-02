@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Proxy Options</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 16px; max-width: 640px; }
+    label { display:block; margin-top:10px; }
+    input, select { width:100%; padding:8px; margin-top:6px; }
+    .note { color:#555; font-size:12px; margin-top:10px; }
+    button { margin-top:14px; padding:10px 12px; }
+  </style>
+</head>
+<body>
+  <h2>Setting</h2>
+
+  <label>Type</label>
+  <select id="scheme">
+    <option>HTTP</option>
+    <option>HTTPS</option>
+    <option>SOCKS5</option>
+  </select>
+
+  <label>Host</label>
+  <input id="host" />
+
+  <label>Port</label>
+  <input id="port" type="number" />
+
+  <label>Login</label>
+  <input id="username" />
+
+  <label>Pass</label>
+  <input id="password" type="password" />
+
+  <button id="save">Save</button>
+  <div id="status" class="note"></div>
+
+  <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Proxy Toggle (MV3)",
+  "description": "Quick enable/disable proxy in Chrome (HTTP/HTTPS/SOCKS5).",
+  "version": "1.0.0",
+  "action": {
+    "default_title": "Proxy Toggle",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "proxy",
+    "storage",
+    "webRequest",
+    "webRequestAuthProvider",
+    "webRequestBlocking"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
